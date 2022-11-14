@@ -199,6 +199,7 @@ def verify_hold_credit(uid, db=db_users):
         ref.update({'credits': new_credits, 'credits_on_hold':new_credits_on_hold})
     
         return 200, None
+
     except:
         return HTTP_500_INTERNAL_SERVER_ERROR, "Internal server error"          
 
